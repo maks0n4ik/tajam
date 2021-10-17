@@ -1,0 +1,502 @@
+body
+    font-family: 'Roboto', sans-serif;
+    
+p
+    margin: 0
+
+input
+    outline: 0
+.intro
+    background: url(../images/bg.jpg) no-repeat center
+    width: 100%
+    height: 670px
+    z-index: 1000
+    display: flex
+    
+    &__inner
+        width: 100%
+        max-width: 800px
+        text-align: center
+        margin: 225px auto 0
+.btn   
+    &:hover
+        background-color: #00E0D0
+        color: #fff
+    border: 2px solid
+    border-color: #00E0D0
+    border-radius: 2px
+    color: #00E0D0
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 16px
+    padding: 14px 15px
+    margin-top: 50px
+    display: inline-block
+
+    transition: background-color .2s linear
+
+.container
+    max-width: 1200px
+    width: 100%
+    margin: 0 auto
+
+.header
+    z-index: 1000
+    position: absolute
+    width: 100%
+    margin: 0 auto
+    padding-top: 25px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+.logo
+    display: flex
+    text-align: center
+    align-items: center
+    &-name
+        color: #366082
+        line-height: 30px
+        font-size: 30px
+        font-weight: 100
+        margin: 0
+        display: table
+        margin-left: 12px
+        background: linear-gradient(90deg, #4AFFFF, #4793BB)
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+.nav
+    &__link
+        position: relative
+        &::after
+            content: ""
+            background-color: #fff
+            width: 100%
+            top: 100%
+            height: 2px
+            display: block
+            position: absolute
+            opacity: 0
+            
+            transition: opacity .1s linear, color .2s linear
+        &:hover
+            &::after
+                opacity: 1
+                background-color: #06CAC2
+
+            color: #06CAC2
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 13px
+        font-weight: 900
+
+        margin-left: 20px
+
+        transition: color .2s linear
+
+.title
+    color: #fff
+    font-size: 32px
+    font-weight: bold
+    font-family: 'Playfair Display', serif;
+    &::after
+        content: ""
+        width: 50px
+        height: 1px
+        background-color:#00E0D0
+        margin: 30px auto
+        
+        display: block
+    &_description
+        color: #9893AA
+        line-height: 20px
+        font-size: 14px
+        font-weight: 300
+.slider
+    align-items: center
+    margin: 0 auto
+.dots
+    &:hover
+        background-color: #00E0D0
+        border: #00E0D0 1px solid
+    display: inline-block
+    width: 10px
+    height: 10px
+    border: #fff 1px solid
+    border-radius: 50%
+    margin-left: 6px
+    margin-top: 125px
+
+    transition: background-color .2s linear, border .2s linear
+
+.our-story
+    &__logo
+        margin-left: 70px
+        margin-right: 100px
+    &__inner 
+        display: flex
+        width: 80%
+        margin: 70px auto
+    &__description
+        &-title
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase
+            font-size: 22px
+            font-weight: 700
+            color: #413D4B
+            margin-bottom: 30px
+        &-text
+            font-size: 14px
+            color: #84828A
+            font-weight: 300
+            margin-bottom: 35px
+
+.video
+    background: url(../images/video.jpg) center no-repeat
+    background-size: cover
+    width: 100%
+    height: 550px
+    display: flex
+    align-items: center
+    &__player
+        margin-bottom: 55px
+        &-text
+            font-size: 16px
+            font-weight: 700
+            line-height: 16px
+            color: #fff
+            text-transform: uppercase
+            margin: 0 auto
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.expertise
+    &__inner
+        text-align: center
+        &-items
+        &-title
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase
+            font-size: 22px
+            font-weight: 700
+            margin-top: 70px
+            color: #413D4B
+        &-description
+            font-family: 'Playfair Display', serif;
+            color: #88878C
+            font-size: 14px
+            font-weight: 400
+            margin-top: 15px
+            &::after
+                content: ""
+                display: block
+                width: 50px
+                height: 2px
+                background-color: #C6C4C9
+                margin: 20px auto 0
+
+.items
+    &-description
+        color: #888888
+        font-size: 14px
+        font-weight: 300
+        margin-top: 25px
+    &-title
+        color: #413D4B
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 700
+        margin-top: 30px
+    &__top
+        width: 930px
+        display: grid
+        grid-template-columns: repeat(3, 250px)
+        align-items: center
+        grid-gap: 90px
+        margin: 80px auto 0
+        
+    &__bottom
+        width: 930px
+        display: grid
+        grid-template-columns: repeat(3, 250px)
+        margin-top: 80px
+        align-items: center
+        grid-gap: 90px
+        margin: 90px auto 100px
+
+.teams
+    background: url(../images/teamsbg.jpg)
+    width: 100%
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-subtitle
+            font-weight: 300
+            font-size: 14px
+            color: #A4A2B2
+            display: block
+        &-btn
+            margin-top: 30px
+            margin-bottom: 50px
+        &-title
+            display: block
+            font-size: 22px
+            font-weight: 700
+            font-family: 'Playfair Display', serif;
+            color: #fff
+            margin: 70px auto 15px
+            text-transform: uppercase
+        &-description
+            font-size: 14px
+            font-weight: 400
+            font-family: 'Playfair Display', serif;
+            color: #fff
+            &::after
+                content: ""
+                background-color: #655C80
+                width: 50px
+                height: 2px
+                display: block
+                margin: 20px auto 45px
+        &-cards
+            display: grid
+            grid-gap: 20px
+            grid-template-columns: repeat(4, 1fr)
+
+.card
+    &-name
+        font-size: 14px
+        color: #fff
+        font-weight: 700
+        display: block
+        text-align: center
+        text-transform: uppercase
+        margin-top: 20px
+    &-profession
+        font-size: 14px
+        color: #A4A2B2
+        display: block
+        text-align: center
+        text-transform: uppercase
+        margin-top: 10px
+        font-weight: 300
+        &::after
+            content: ""
+            background-color: #655C80
+            width: 100%
+            height: 2px
+            display: block
+            margin: 25px auto 40px
+
+.our-works
+    &__inner
+        display: flex
+        justify-content: space-between
+        &-txt
+            display: flex
+            align-items: center
+        &-text
+            font-size: 14px
+            font-weight: 300
+            color: #828088
+            margin: 70px 0
+            text-decoration: none
+        &-title
+            text-transform: uppercase
+            color: #413D4B
+            font-size: 22px
+            font-weight: 700
+            font-family: 'Playfair Display', serif;
+            margin: 70px 0 0
+        
+    &__btn
+        margin: 70px auto
+        
+.btn
+    &__inner
+        width: 100%
+        text-align: center
+
+.works
+    display: grid
+    gread-temolate-columns: 1fr
+
+.reviews
+    background: url(../images/reviews.jpg)
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        width: 65%
+        margin: 0 auto
+    &-text
+        display: block
+        font-family: 'Playfair Display', serif;
+        font-size: 16px
+        color: #E7E6E9
+        font-weight: 400
+        line-height: 25px
+    &-name
+        display: block
+        font-size: 14px
+        font-weight: 700
+        color: #fff
+        margin: 55px 0 15px
+    &-profession
+        display: block
+        margin-bottom: 70px
+        font-size: 13px
+        font-weight: 300
+        color: #938FA0
+
+.quotes
+    font-size: 100px
+    font-weight: 700
+    font-family: 'Playfair Display', serif;
+    color: #EBEAEF
+    margin-top: 70px
+
+.backmail
+    &__inner
+        display: flex
+        &_btn
+            width: 60px
+            padding: 15px 30px
+            text-align: center
+            margin: 0 0 70px
+    &-reviews
+        display: flex
+        flex-direction: column
+        margin-right: 100px
+        &_title
+            text-transform: uppercase
+            margin: 70px 0 35px
+            font-size: 22px
+            font-weight: 700
+            color: #413D4B
+            font-family: 'Playfair Display', serif;
+        &_name,
+        &_email,
+        &_subject,
+        &_message
+            width: 460px
+            border: none
+            border: #E5E5E5 1px solid
+            margin-bottom: 20px
+            padding: 15px 20px
+            font-size: 14px
+        &_message
+            height: 200px
+            resize: none    
+    &-client
+        &_title
+            text-transform: uppercase
+            margin: 70px 0 45px
+            font-size: 22px
+            font-weight: 700
+            color: #413D4B
+            font-family: 'Playfair Display', serif;
+
+.clientcard
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 80px
+    grid-row-gap: 45px
+    align-items: center
+    justify-items: center
+
+.footer
+    background: url(../images/footer.jpg)
+    &-logo
+        &_name
+            color: #366082
+            line-height: 30px
+            font-size: 30px
+            font-weight: 100
+            margin-left: 12px
+            background: linear-gradient(90deg, #4AFFFF, #4793BB)
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        &_text
+            display: block
+            color: #C6C5CC
+            font-weight: 300
+            font-size: 14px
+            line-height: 25px
+
+    &__inner
+        padding: 70px 0
+
+.top
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-column-gap: 45px
+
+.logotype
+    display: flex
+    align-items: center
+    margin-bottom: 25px
+
+.our-studio
+    &_text
+        color: #C6C5CC
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        display: block
+        margin-bottom: 15px
+        margin-left: 15px
+    &_title
+        color: #fff
+        text-transform: uppercase
+        font-size: 15px
+        font-weight: 700
+        line-height: 50px
+        display: block
+        margin-bottom: 20px
+
+.location, .telephone
+    display: flex
+    align-items: start  
+
+.stayintouch
+    &_message
+        display: flex
+    &_title
+        color: #fff
+        text-transform: uppercase
+        font-size: 15px
+        font-weight: 700
+        line-height: 50px
+        display: block
+
+.message
+    &_input
+        background: transparent
+        border: none
+        border: #807898 1px solid
+        width: 210px
+        padding: 12px 13px
+        margin-right: 10px
+        margin-bottom: 30px
+
+.submit
+    background-color: #A199B4
+    padding: 10px 25px
+    width: 25px
+    height: 25px
+    display: flex
+    align-items: center
+    opacity: 0.5
+
+.social
+    &-card
+        margin-right: 5px
